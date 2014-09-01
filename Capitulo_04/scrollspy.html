@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- [if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<title>ScrollSpy</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<style type="text/css">
+		.scrollspy-example{
+			position:relative;
+			height:400px;
+			margin-top:10px;
+			overflow:auto
+		}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h3>ScrollSpy</h3>
+		</div>
+		<nav id="navbarExample" class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbarLinks">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">SitePoint</a>
+				</div>
+				<div class="collapse navbar-collapse navbarLinks">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#home">Home</a></li>
+						<li class=""><a href="#about">About</a></li>
+						<li class=""><a href="#contact">Contact Us</a></li>
+						<li class=""><a href="#map">Map</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div data-spy="scroll" data-target="navbarExample" data-offset="0" class="scrollspy-example">
+			<h4 id="home">Home</h4>
+			<p>Lorem ipsum dolor sit amet, imperdiet vel, mi consectetuer, ornare nibh vitae, etiam mi montes vel. Ligula nunc fusce odio nec accumsan vitae. Cubilia in nec tempus integer, adipiscing imperdiet ultricies mauris, eros ante potenti ut enim consequatur. Hendrerit ultricies at nibh pede, aliquam blandit sed. Enim id sed quam et porttitor dictumst, vestibulum integer eros dolor posuere quam nulla, dignissim odio in faucibus, nunc gravida eleifend nunc, non condimentum felis magnam elit. Eros ad commodo fringilla proin, cras viverra. Eros amet ex eget, adipiscing integer vestibulum torquent lectus etiam malesuada. Facilisis arcu consequat justo, ut gravida ornare blandit phasellus tempor at.
+				Lectus sociosqu, suscipit mauris, tellus malesuada laoreet, neque suspendisse gravida sed et. Est dolor blandit mauris vulputate vel ipsum, semper nulla dolor. Platea praesent cras nunc condimentum, sed orci erat. Tristique ipsum venenatis orci duis, lorem quisque ut pede mattis adipiscing, in aliquam etiam. Amet leo aliquip donec sed venenatis leo, in id aliquet erat, sed nulla sollicitudin vitae sit nulla. Libero sollicitudin, amet varius sem. Elementum mauris sit sociosqu condimentum eget, vitae metus lacus justo ut, ut nulla elit orci pellentesque, imperdiet placerat nec magna orci viverra, vel nunc. Turpis porttitor luctus orci hendrerit dolor in, ut etiam, amet tempus vestibulum. Adipiscing orci purus neque nunc dolor lorem, nunc habitasse tortor accumsan morbi vel quis, nullam suspendisse erat et suspendisse, orci ipsum, mi nunc suspendisse. In suspendisse maecenas leo, massa nunc massa mauris eget vitae, lorem dolor mi molestie, vitae suspendisse, sit at pellentesque at et egestas dolor.
+				A nisl nunc, proin metus quis nibh id mauris. Quis suspendisse pharetra scelerisque est, ante consequat non quis quis tempor. Ut dolor aptent metus eget, curabitur hymenaeos vivamus urna accumsan ligula molestie. Orci commodo mus morbi, ullamcorper vitae. Eros ut hendrerit neque sit, venenatis tempor sollicitudin sem maecenas sapien nulla, massa fusce mauris ante nonummy. Ante congue ac varius, donec rutrum et mauris, fermentum at fermentum enim a taciti. Vel curabitur sed enim quis tristique feugiat, mauris felis morbi, libero phasellus sed.
+				A dictum velit etiam quam magna per, volutpat elementum est, lacus dolor nemo, et nec tempus in gravida, mi urna suspendisse. Voluptates sem leo, massa nulla, sem proin, magna platea id convallis neque. A nulla. Gravida nisl amet purus nec feugiat fringilla, eros etiam eos hac eget, urna et eget mauris risus. Arcu sodales nunc quis. Mollis enim in eget amet litora, nulla ut et vel scelerisque ultricies vitae. Convallis mauris cras, praesent praesent a donec. Malesuada sit. Tortor fusce, vitae vitae officiis consequat, vel ut et. Lorem auctor nisl, tincidunt cras sapien commodo et nullam, risus in a sed. Facilisi inceptos lectus ultricies lacinia, laoreet litora vitae lobortis, id tellus wisi maecenas mauris amet ac, torquent molestie volutpat.
+			</p>
+			
+			<h4 id="about">About</h4>
+			<p>Lorem ipsum dolor sit amet, imperdiet vel, mi consectetuer, ornare nibh vitae, etiam mi montes vel. Ligula nunc fusce odio nec accumsan vitae. Cubilia in nec tempus integer, adipiscing imperdiet ultricies mauris, eros ante potenti ut enim consequatur. Hendrerit ultricies at nibh pede, aliquam blandit sed. Enim id sed quam et porttitor dictumst, vestibulum integer eros dolor posuere quam nulla, dignissim odio in faucibus, nunc gravida eleifend nunc, non condimentum felis magnam elit. Eros ad commodo fringilla proin, cras viverra. Eros amet ex eget, adipiscing integer vestibulum torquent lectus etiam malesuada. Facilisis arcu consequat justo, ut gravida ornare blandit phasellus tempor at.
+				Lectus sociosqu, suscipit mauris, tellus malesuada laoreet, neque suspendisse gravida sed et. Est dolor blandit mauris vulputate vel ipsum, semper nulla dolor. Platea praesent cras nunc condimentum, sed orci erat. Tristique ipsum venenatis orci duis, lorem quisque ut pede mattis adipiscing, in aliquam etiam. Amet leo aliquip donec sed venenatis leo, in id aliquet erat, sed nulla sollicitudin vitae sit nulla. Libero sollicitudin, amet varius sem. Elementum mauris sit sociosqu condimentum eget, vitae metus lacus justo ut, ut nulla elit orci pellentesque, imperdiet placerat nec magna orci viverra, vel nunc. Turpis porttitor luctus orci hendrerit dolor in, ut etiam, amet tempus vestibulum. Adipiscing orci purus neque nunc dolor lorem, nunc habitasse tortor accumsan morbi vel quis, nullam suspendisse erat et suspendisse, orci ipsum, mi nunc suspendisse. In suspendisse maecenas leo, massa nunc massa mauris eget vitae, lorem dolor mi molestie, vitae suspendisse, sit at pellentesque at et egestas dolor.
+				A nisl nunc, proin metus quis nibh id mauris. Quis suspendisse pharetra scelerisque est, ante consequat non quis quis tempor. Ut dolor aptent metus eget, curabitur hymenaeos vivamus urna accumsan ligula molestie. Orci commodo mus morbi, ullamcorper vitae. Eros ut hendrerit neque sit, venenatis tempor sollicitudin sem maecenas sapien nulla, massa fusce mauris ante nonummy. Ante congue ac varius, donec rutrum et mauris, fermentum at fermentum enim a taciti. Vel curabitur sed enim quis tristique feugiat, mauris felis morbi, libero phasellus sed.
+				A dictum velit etiam quam magna per, volutpat elementum est, lacus dolor nemo, et nec tempus in gravida, mi urna suspendisse. Voluptates sem leo, massa nulla, sem proin, magna platea id convallis neque. A nulla. Gravida nisl amet purus nec feugiat fringilla, eros etiam eos hac eget, urna et eget mauris risus. Arcu sodales nunc quis. Mollis enim in eget amet litora, nulla ut et vel scelerisque ultricies vitae. Convallis mauris cras, praesent praesent a donec. Malesuada sit. Tortor fusce, vitae vitae officiis consequat, vel ut et. Lorem auctor nisl, tincidunt cras sapien commodo et nullam, risus in a sed. Facilisi inceptos lectus ultricies lacinia, laoreet litora vitae lobortis, id tellus wisi maecenas mauris amet ac, torquent molestie volutpat.
+			</p>
+			
+			<h4 id="contact">Contact</h4>
+			<p>Lorem ipsum dolor sit amet, imperdiet vel, mi consectetuer, ornare nibh vitae, etiam mi montes vel. Ligula nunc fusce odio nec accumsan vitae. Cubilia in nec tempus integer, adipiscing imperdiet ultricies mauris, eros ante potenti ut enim consequatur. Hendrerit ultricies at nibh pede, aliquam blandit sed. Enim id sed quam et porttitor dictumst, vestibulum integer eros dolor posuere quam nulla, dignissim odio in faucibus, nunc gravida eleifend nunc, non condimentum felis magnam elit. Eros ad commodo fringilla proin, cras viverra. Eros amet ex eget, adipiscing integer vestibulum torquent lectus etiam malesuada. Facilisis arcu consequat justo, ut gravida ornare blandit phasellus tempor at.
+				Lectus sociosqu, suscipit mauris, tellus malesuada laoreet, neque suspendisse gravida sed et. Est dolor blandit mauris vulputate vel ipsum, semper nulla dolor. Platea praesent cras nunc condimentum, sed orci erat. Tristique ipsum venenatis orci duis, lorem quisque ut pede mattis adipiscing, in aliquam etiam. Amet leo aliquip donec sed venenatis leo, in id aliquet erat, sed nulla sollicitudin vitae sit nulla. Libero sollicitudin, amet varius sem. Elementum mauris sit sociosqu condimentum eget, vitae metus lacus justo ut, ut nulla elit orci pellentesque, imperdiet placerat nec magna orci viverra, vel nunc. Turpis porttitor luctus orci hendrerit dolor in, ut etiam, amet tempus vestibulum. Adipiscing orci purus neque nunc dolor lorem, nunc habitasse tortor accumsan morbi vel quis, nullam suspendisse erat et suspendisse, orci ipsum, mi nunc suspendisse. In suspendisse maecenas leo, massa nunc massa mauris eget vitae, lorem dolor mi molestie, vitae suspendisse, sit at pellentesque at et egestas dolor.
+				A nisl nunc, proin metus quis nibh id mauris. Quis suspendisse pharetra scelerisque est, ante consequat non quis quis tempor. Ut dolor aptent metus eget, curabitur hymenaeos vivamus urna accumsan ligula molestie. Orci commodo mus morbi, ullamcorper vitae. Eros ut hendrerit neque sit, venenatis tempor sollicitudin sem maecenas sapien nulla, massa fusce mauris ante nonummy. Ante congue ac varius, donec rutrum et mauris, fermentum at fermentum enim a taciti. Vel curabitur sed enim quis tristique feugiat, mauris felis morbi, libero phasellus sed.
+				A dictum velit etiam quam magna per, volutpat elementum est, lacus dolor nemo, et nec tempus in gravida, mi urna suspendisse. Voluptates sem leo, massa nulla, sem proin, magna platea id convallis neque. A nulla. Gravida nisl amet purus nec feugiat fringilla, eros etiam eos hac eget, urna et eget mauris risus. Arcu sodales nunc quis. Mollis enim in eget amet litora, nulla ut et vel scelerisque ultricies vitae. Convallis mauris cras, praesent praesent a donec. Malesuada sit. Tortor fusce, vitae vitae officiis consequat, vel ut et. Lorem auctor nisl, tincidunt cras sapien commodo et nullam, risus in a sed. Facilisi inceptos lectus ultricies lacinia, laoreet litora vitae lobortis, id tellus wisi maecenas mauris amet ac, torquent molestie volutpat.
+			</p>
+			
+			<h4 id="map">Map</h4>
+			<p>Lorem ipsum dolor sit amet, imperdiet vel, mi consectetuer, ornare nibh vitae, etiam mi montes vel. Ligula nunc fusce odio nec accumsan vitae. Cubilia in nec tempus integer, adipiscing imperdiet ultricies mauris, eros ante potenti ut enim consequatur. Hendrerit ultricies at nibh pede, aliquam blandit sed. Enim id sed quam et porttitor dictumst, vestibulum integer eros dolor posuere quam nulla, dignissim odio in faucibus, nunc gravida eleifend nunc, non condimentum felis magnam elit. Eros ad commodo fringilla proin, cras viverra. Eros amet ex eget, adipiscing integer vestibulum torquent lectus etiam malesuada. Facilisis arcu consequat justo, ut gravida ornare blandit phasellus tempor at.
+				Lectus sociosqu, suscipit mauris, tellus malesuada laoreet, neque suspendisse gravida sed et. Est dolor blandit mauris vulputate vel ipsum, semper nulla dolor. Platea praesent cras nunc condimentum, sed orci erat. Tristique ipsum venenatis orci duis, lorem quisque ut pede mattis adipiscing, in aliquam etiam. Amet leo aliquip donec sed venenatis leo, in id aliquet erat, sed nulla sollicitudin vitae sit nulla. Libero sollicitudin, amet varius sem. Elementum mauris sit sociosqu condimentum eget, vitae metus lacus justo ut, ut nulla elit orci pellentesque, imperdiet placerat nec magna orci viverra, vel nunc. Turpis porttitor luctus orci hendrerit dolor in, ut etiam, amet tempus vestibulum. Adipiscing orci purus neque nunc dolor lorem, nunc habitasse tortor accumsan morbi vel quis, nullam suspendisse erat et suspendisse, orci ipsum, mi nunc suspendisse. In suspendisse maecenas leo, massa nunc massa mauris eget vitae, lorem dolor mi molestie, vitae suspendisse, sit at pellentesque at et egestas dolor.
+				A nisl nunc, proin metus quis nibh id mauris. Quis suspendisse pharetra scelerisque est, ante consequat non quis quis tempor. Ut dolor aptent metus eget, curabitur hymenaeos vivamus urna accumsan ligula molestie. Orci commodo mus morbi, ullamcorper vitae. Eros ut hendrerit neque sit, venenatis tempor sollicitudin sem maecenas sapien nulla, massa fusce mauris ante nonummy. Ante congue ac varius, donec rutrum et mauris, fermentum at fermentum enim a taciti. Vel curabitur sed enim quis tristique feugiat, mauris felis morbi, libero phasellus sed.
+				A dictum velit etiam quam magna per, volutpat elementum est, lacus dolor nemo, et nec tempus in gravida, mi urna suspendisse. Voluptates sem leo, massa nulla, sem proin, magna platea id convallis neque. A nulla. Gravida nisl amet purus nec feugiat fringilla, eros etiam eos hac eget, urna et eget mauris risus. Arcu sodales nunc quis. Mollis enim in eget amet litora, nulla ut et vel scelerisque ultricies vitae. Convallis mauris cras, praesent praesent a donec. Malesuada sit. Tortor fusce, vitae vitae officiis consequat, vel ut et. Lorem auctor nisl, tincidunt cras sapien commodo et nullam, risus in a sed. Facilisi inceptos lectus ultricies lacinia, laoreet litora vitae lobortis, id tellus wisi maecenas mauris amet ac, torquent molestie volutpat.
+			</p>
+		</div>
+		
+		<nav id="navbarExample2" class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbarLinks2">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">SitePoint</a>
+				</div>
+				<div class="collapse navbar-collapse navbarLinks2">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#home2" onclick="cliquei('home2');">Home</a></li>
+						<li class=""><a href="#about2" onclick="cliquei('about2');">About</a></li>
+						<li class=""><a href="#contact2" onclick="cliquei('contact2');">Contact Us</a></li>
+						<li class=""><a href="#map2" onclick="cliquei('map2');">Map</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div data-offset="0" class="scrollspy-example2">
+			<h4 id="home2">Home</h4>
+			<p>Lorem ipsum dolor sit amet, imperdiet vel, mi consectetuer, ornare nibh vitae, etiam mi montes vel. Ligula nunc fusce odio nec accumsan vitae. Cubilia in nec tempus integer, adipiscing imperdiet ultricies mauris, eros ante potenti ut enim consequatur. Hendrerit ultricies at nibh pede, aliquam blandit sed. Enim id sed quam et porttitor dictumst, vestibulum integer eros dolor posuere quam nulla, dignissim odio in faucibus, nunc gravida eleifend nunc, non condimentum felis magnam elit. Eros ad commodo fringilla proin, cras viverra. Eros amet ex eget, adipiscing integer vestibulum torquent lectus etiam malesuada. Facilisis arcu consequat justo, ut gravida ornare blandit phasellus tempor at.
+				Lectus sociosqu, suscipit mauris, tellus malesuada laoreet, neque suspendisse gravida sed et. Est dolor blandit mauris vulputate vel ipsum, semper nulla dolor. Platea praesent cras nunc condimentum, sed orci erat. Tristique ipsum venenatis orci duis, lorem quisque ut pede mattis adipiscing, in aliquam etiam. Amet leo aliquip donec sed venenatis leo, in id aliquet erat, sed nulla sollicitudin vitae sit nulla. Libero sollicitudin, amet varius sem. Elementum mauris sit sociosqu condimentum eget, vitae metus lacus justo ut, ut nulla elit orci pellentesque, imperdiet placerat nec magna orci viverra, vel nunc. Turpis porttitor luctus orci hendrerit dolor in, ut etiam, amet tempus vestibulum. Adipiscing orci purus neque nunc dolor lorem, nunc habitasse tortor accumsan morbi vel quis, nullam suspendisse erat et suspendisse, orci ipsum, mi nunc suspendisse. In suspendisse maecenas leo, massa nunc massa mauris eget vitae, lorem dolor mi molestie, vitae suspendisse, sit at pellentesque at et egestas dolor.
+				A nisl nunc, proin metus quis nibh id mauris. Quis suspendisse pharetra scelerisque est, ante consequat non quis quis tempor. Ut dolor aptent metus eget, curabitur hymenaeos vivamus urna accumsan ligula molestie. Orci commodo mus morbi, ullamcorper vitae. Eros ut hendrerit neque sit, venenatis tempor sollicitudin sem maecenas sapien nulla, massa fusce mauris ante nonummy. Ante congue ac varius, donec rutrum et mauris, fermentum at fermentum enim a taciti. Vel curabitur sed enim quis tristique feugiat, mauris felis morbi, libero phasellus sed.
+				A dictum velit etiam quam magna per, volutpat elementum est, lacus dolor nemo, et nec tempus in gravida, mi urna suspendisse. Voluptates sem leo, massa nulla, sem proin, magna platea id convallis neque. A nulla. Gravida nisl amet purus nec feugiat fringilla, eros etiam eos hac eget, urna et eget mauris risus. Arcu sodales nunc quis. Mollis enim in eget amet litora, nulla ut et vel scelerisque ultricies vitae. Convallis mauris cras, praesent praesent a donec. Malesuada sit. Tortor fusce, vitae vitae officiis consequat, vel ut et. Lorem auctor nisl, tincidunt cras sapien commodo et nullam, risus in a sed. Facilisi inceptos lectus ultricies lacinia, laoreet litora vitae lobortis, id tellus wisi maecenas mauris amet ac, torquent molestie volutpat.
+			</p>
+			
+			<h4 id="about2">About</h4>
+			<p>Lorem ipsum dolor sit amet, imperdiet vel, mi consectetuer, ornare nibh vitae, etiam mi montes vel. Ligula nunc fusce odio nec accumsan vitae. Cubilia in nec tempus integer, adipiscing imperdiet ultricies mauris, eros ante potenti ut enim consequatur. Hendrerit ultricies at nibh pede, aliquam blandit sed. Enim id sed quam et porttitor dictumst, vestibulum integer eros dolor posuere quam nulla, dignissim odio in faucibus, nunc gravida eleifend nunc, non condimentum felis magnam elit. Eros ad commodo fringilla proin, cras viverra. Eros amet ex eget, adipiscing integer vestibulum torquent lectus etiam malesuada. Facilisis arcu consequat justo, ut gravida ornare blandit phasellus tempor at.
+				Lectus sociosqu, suscipit mauris, tellus malesuada laoreet, neque suspendisse gravida sed et. Est dolor blandit mauris vulputate vel ipsum, semper nulla dolor. Platea praesent cras nunc condimentum, sed orci erat. Tristique ipsum venenatis orci duis, lorem quisque ut pede mattis adipiscing, in aliquam etiam. Amet leo aliquip donec sed venenatis leo, in id aliquet erat, sed nulla sollicitudin vitae sit nulla. Libero sollicitudin, amet varius sem. Elementum mauris sit sociosqu condimentum eget, vitae metus lacus justo ut, ut nulla elit orci pellentesque, imperdiet placerat nec magna orci viverra, vel nunc. Turpis porttitor luctus orci hendrerit dolor in, ut etiam, amet tempus vestibulum. Adipiscing orci purus neque nunc dolor lorem, nunc habitasse tortor accumsan morbi vel quis, nullam suspendisse erat et suspendisse, orci ipsum, mi nunc suspendisse. In suspendisse maecenas leo, massa nunc massa mauris eget vitae, lorem dolor mi molestie, vitae suspendisse, sit at pellentesque at et egestas dolor.
+				A nisl nunc, proin metus quis nibh id mauris. Quis suspendisse pharetra scelerisque est, ante consequat non quis quis tempor. Ut dolor aptent metus eget, curabitur hymenaeos vivamus urna accumsan ligula molestie. Orci commodo mus morbi, ullamcorper vitae. Eros ut hendrerit neque sit, venenatis tempor sollicitudin sem maecenas sapien nulla, massa fusce mauris ante nonummy. Ante congue ac varius, donec rutrum et mauris, fermentum at fermentum enim a taciti. Vel curabitur sed enim quis tristique feugiat, mauris felis morbi, libero phasellus sed.
+				A dictum velit etiam quam magna per, volutpat elementum est, lacus dolor nemo, et nec tempus in gravida, mi urna suspendisse. Voluptates sem leo, massa nulla, sem proin, magna platea id convallis neque. A nulla. Gravida nisl amet purus nec feugiat fringilla, eros etiam eos hac eget, urna et eget mauris risus. Arcu sodales nunc quis. Mollis enim in eget amet litora, nulla ut et vel scelerisque ultricies vitae. Convallis mauris cras, praesent praesent a donec. Malesuada sit. Tortor fusce, vitae vitae officiis consequat, vel ut et. Lorem auctor nisl, tincidunt cras sapien commodo et nullam, risus in a sed. Facilisi inceptos lectus ultricies lacinia, laoreet litora vitae lobortis, id tellus wisi maecenas mauris amet ac, torquent molestie volutpat.
+			</p>
+			
+			<h4 id="contact2">Contact</h4>
+			<p>Lorem ipsum dolor sit amet, imperdiet vel, mi consectetuer, ornare nibh vitae, etiam mi montes vel. Ligula nunc fusce odio nec accumsan vitae. Cubilia in nec tempus integer, adipiscing imperdiet ultricies mauris, eros ante potenti ut enim consequatur. Hendrerit ultricies at nibh pede, aliquam blandit sed. Enim id sed quam et porttitor dictumst, vestibulum integer eros dolor posuere quam nulla, dignissim odio in faucibus, nunc gravida eleifend nunc, non condimentum felis magnam elit. Eros ad commodo fringilla proin, cras viverra. Eros amet ex eget, adipiscing integer vestibulum torquent lectus etiam malesuada. Facilisis arcu consequat justo, ut gravida ornare blandit phasellus tempor at.
+				Lectus sociosqu, suscipit mauris, tellus malesuada laoreet, neque suspendisse gravida sed et. Est dolor blandit mauris vulputate vel ipsum, semper nulla dolor. Platea praesent cras nunc condimentum, sed orci erat. Tristique ipsum venenatis orci duis, lorem quisque ut pede mattis adipiscing, in aliquam etiam. Amet leo aliquip donec sed venenatis leo, in id aliquet erat, sed nulla sollicitudin vitae sit nulla. Libero sollicitudin, amet varius sem. Elementum mauris sit sociosqu condimentum eget, vitae metus lacus justo ut, ut nulla elit orci pellentesque, imperdiet placerat nec magna orci viverra, vel nunc. Turpis porttitor luctus orci hendrerit dolor in, ut etiam, amet tempus vestibulum. Adipiscing orci purus neque nunc dolor lorem, nunc habitasse tortor accumsan morbi vel quis, nullam suspendisse erat et suspendisse, orci ipsum, mi nunc suspendisse. In suspendisse maecenas leo, massa nunc massa mauris eget vitae, lorem dolor mi molestie, vitae suspendisse, sit at pellentesque at et egestas dolor.
+				A nisl nunc, proin metus quis nibh id mauris. Quis suspendisse pharetra scelerisque est, ante consequat non quis quis tempor. Ut dolor aptent metus eget, curabitur hymenaeos vivamus urna accumsan ligula molestie. Orci commodo mus morbi, ullamcorper vitae. Eros ut hendrerit neque sit, venenatis tempor sollicitudin sem maecenas sapien nulla, massa fusce mauris ante nonummy. Ante congue ac varius, donec rutrum et mauris, fermentum at fermentum enim a taciti. Vel curabitur sed enim quis tristique feugiat, mauris felis morbi, libero phasellus sed.
+				A dictum velit etiam quam magna per, volutpat elementum est, lacus dolor nemo, et nec tempus in gravida, mi urna suspendisse. Voluptates sem leo, massa nulla, sem proin, magna platea id convallis neque. A nulla. Gravida nisl amet purus nec feugiat fringilla, eros etiam eos hac eget, urna et eget mauris risus. Arcu sodales nunc quis. Mollis enim in eget amet litora, nulla ut et vel scelerisque ultricies vitae. Convallis mauris cras, praesent praesent a donec. Malesuada sit. Tortor fusce, vitae vitae officiis consequat, vel ut et. Lorem auctor nisl, tincidunt cras sapien commodo et nullam, risus in a sed. Facilisi inceptos lectus ultricies lacinia, laoreet litora vitae lobortis, id tellus wisi maecenas mauris amet ac, torquent molestie volutpat.
+			</p>
+			
+			<h4 id="map2">Map</h4>
+			<p>Lorem ipsum dolor sit amet, imperdiet vel, mi consectetuer, ornare nibh vitae, etiam mi montes vel. Ligula nunc fusce odio nec accumsan vitae. Cubilia in nec tempus integer, adipiscing imperdiet ultricies mauris, eros ante potenti ut enim consequatur. Hendrerit ultricies at nibh pede, aliquam blandit sed. Enim id sed quam et porttitor dictumst, vestibulum integer eros dolor posuere quam nulla, dignissim odio in faucibus, nunc gravida eleifend nunc, non condimentum felis magnam elit. Eros ad commodo fringilla proin, cras viverra. Eros amet ex eget, adipiscing integer vestibulum torquent lectus etiam malesuada. Facilisis arcu consequat justo, ut gravida ornare blandit phasellus tempor at.
+				Lectus sociosqu, suscipit mauris, tellus malesuada laoreet, neque suspendisse gravida sed et. Est dolor blandit mauris vulputate vel ipsum, semper nulla dolor. Platea praesent cras nunc condimentum, sed orci erat. Tristique ipsum venenatis orci duis, lorem quisque ut pede mattis adipiscing, in aliquam etiam. Amet leo aliquip donec sed venenatis leo, in id aliquet erat, sed nulla sollicitudin vitae sit nulla. Libero sollicitudin, amet varius sem. Elementum mauris sit sociosqu condimentum eget, vitae metus lacus justo ut, ut nulla elit orci pellentesque, imperdiet placerat nec magna orci viverra, vel nunc. Turpis porttitor luctus orci hendrerit dolor in, ut etiam, amet tempus vestibulum. Adipiscing orci purus neque nunc dolor lorem, nunc habitasse tortor accumsan morbi vel quis, nullam suspendisse erat et suspendisse, orci ipsum, mi nunc suspendisse. In suspendisse maecenas leo, massa nunc massa mauris eget vitae, lorem dolor mi molestie, vitae suspendisse, sit at pellentesque at et egestas dolor.
+				A nisl nunc, proin metus quis nibh id mauris. Quis suspendisse pharetra scelerisque est, ante consequat non quis quis tempor. Ut dolor aptent metus eget, curabitur hymenaeos vivamus urna accumsan ligula molestie. Orci commodo mus morbi, ullamcorper vitae. Eros ut hendrerit neque sit, venenatis tempor sollicitudin sem maecenas sapien nulla, massa fusce mauris ante nonummy. Ante congue ac varius, donec rutrum et mauris, fermentum at fermentum enim a taciti. Vel curabitur sed enim quis tristique feugiat, mauris felis morbi, libero phasellus sed.
+				A dictum velit etiam quam magna per, volutpat elementum est, lacus dolor nemo, et nec tempus in gravida, mi urna suspendisse. Voluptates sem leo, massa nulla, sem proin, magna platea id convallis neque. A nulla. Gravida nisl amet purus nec feugiat fringilla, eros etiam eos hac eget, urna et eget mauris risus. Arcu sodales nunc quis. Mollis enim in eget amet litora, nulla ut et vel scelerisque ultricies vitae. Convallis mauris cras, praesent praesent a donec. Malesuada sit. Tortor fusce, vitae vitae officiis consequat, vel ut et. Lorem auctor nisl, tincidunt cras sapien commodo et nullam, risus in a sed. Facilisi inceptos lectus ultricies lacinia, laoreet litora vitae lobortis, id tellus wisi maecenas mauris amet ac, torquent molestie volutpat.
+			</p>
+		</div>
+
+	</div>
+	
+	
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	
+	<script type="text/javascript">
+		
+		
+		function cliquei(menu){
+			$('.scrollspy-example').scrollspy("refresh");
+			$('.scrollspy-example2').scrollspy({ target: '#' + menu });
+		}
+		
+	</script>
+	
+</body>
+</html>

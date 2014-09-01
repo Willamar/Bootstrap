@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- [if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<title>Bootstrap Plugins</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<button type="button" class="btn btn-lg btn-default" data-toggle="button">Toggle Me!</button>
+			<br>
+			<div class="page-header">
+				<h3>Checkbox</h3>
+			</div>
+			<div class="btn-group" data-toggle="buttons">
+				<label class="btn btn-default">
+					<input type="checkbox">Option 1
+				</label>
+				<label class="btn btn-default">
+					<input type="checkbox">Option 2
+				</label>
+				<label class="btn btn-default">
+					<input type="checkbox">Option 3
+				</label>
+			</div>
+			<br>
+			<div class="page-header">
+				<h3>Radio</h3>
+			</div>
+			<div class="btn-group" data-toggle="buttons">
+				<label class="btn btn-info">
+					<input type="radio" name="options">Option 1
+				</label>
+				<label class="btn btn-info">
+					<input type="radio" name="options">Option 2
+				</label>
+				<label class="btn btn-info">
+					<input type="radio" name="options">Option 3
+				</label>
+			</div>			
+			<br>
+			<button type="button" class="btn btn-lg btn-default" id="myButton" data-toggle="button">Toggle Me!</button>
+			<br>
+			<button id="myLoadingButton" type="button" class="btn btn-primary" data-loading-text="loading stuff...">Load data</button>
+			<br>
+			<button id="myCompletedButton" type="button" class="btn btn-primary" data-loading-text="loading stuff..." data-complete-text="Completed!" >Load data</button>
+		</div>
+	</div>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+		$('#document').ready(function(){
+			$("#myButton").button('toggle');
+		});
+		
+		$("#myLoadingButton").click(function(){
+			$(this).button('loading');
+			//volta ao estado normal
+			$(this).button('reset');
+		});
+		
+		$("#myCompletedButton").click(function(){
+			$(this).button('complete');
+		});
+	</script>
+
+
+</body>
+</html>

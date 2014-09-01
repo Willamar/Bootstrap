@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- [if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<title>Tabs</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h3>Tabs</h3>
+		</div>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+			<li><a href="#profile" data-toggle="tab">Profile</a></li>
+			<li><a href="#messages" data-toggle="tab">Messages</a></li>
+			<li><a href="#settings" data-toggle="tab">Settings</a></li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane fade in active" id="home">
+				<h3>The home</h3>
+			</div>
+			<div class="tab-pane fade" id="profile">
+				<h3>The profile</h3>
+			</div>
+			<div class="tab-pane fade" id="messages">
+				<h3>Messages central</h3>
+			</div>
+			<div class="tab-pane fade" id="settings">
+				<h3>Setting panel</h3>
+			</div>
+		</div>
+
+	</div>
+	
+	
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+	
+	<script type="text/javascript">
+		$('.nav-tabs li a').on('show.bs.tab', function() {
+			console.log('Opening tab');
+		});
+		
+		$('.nav-tabs li a').on('shown.bs.tab', function() {
+			console.log('Tab opened!');
+		});
+	</script>
+	
+</body>
+</html>
