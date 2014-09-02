@@ -1,6 +1,6 @@
 Bootstrap
 =========
 
-Exemplos tirado do livro "Jum start Bootstrap".
+Exemplos tirado do livro "Jump start Bootstrap".
 
 Bootstrap 3
