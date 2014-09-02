@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- [if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<title>Tooltips</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h3>Tooltips</h3>
+		</div>
+		<button type="button" class="btn btn-default tooltipButton" data-toggle="tooltip" data-placement="bottom" title="I am a Bootstrap button">Who am I?</button>
+
+	</div>
+	
+	
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	
+	<script type="text/javascript">
+	
+	
+		$(document).ready(function() {
+			$('.tooltipButton').tooltip();
+			
+			//var options = 
+			//{ 
+			//	  animation : true, 
+			//	  html : false, 
+			//	  placement: 'top',
+			//	  title: 'this is a button',
+			//	  trigger: 'click', // hover
+			//	  delay: 2000
+			//};			
+			//$('.tooltipButton').tooltip(options);
+			
+			
+			//$('.tooltipButton').tooltip('show');
+			//$('.tooltipButton').tooltip('hide');
+			//$('.tooltipButton').tooltip('toggle');
+			//$('.tooltipButton').tooltip('destroy');
+		});
+		
+		$('.tooltipButton').on('show.bs.tooltip', function() {
+			console.log("Showing tooltip..");
+		});
+		
+		$('.tooltipButton').on('shown.bs.tooltip', function() {
+			console.log("Tooltip shown.");
+		});
+		
+		$('.tooltipButton').on('hide.bs.tooltip', function() {
+			console.log("hiding tooltip..");
+		});
+		
+		$('.tooltipButton').on('hidden.bs.tooltip', function() {
+			console.log("Tooltip hidden.");
+		});
+		
+		
+	</script>
+	
+</body>
+</html>
