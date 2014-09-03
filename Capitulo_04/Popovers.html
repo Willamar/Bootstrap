@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- [if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<title>Popovers</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="page-header">
+			<h3>Popovers</h3>
+		</div>
+		<button type="button" class="btn btn-danger popoverButton" data-toggle="popover" data-placement="bottom" data-content="Lorem Ipsim Donor." title="This is a demo popover">
+			Click Me!
+		</button>
+		
+	</div>
+	
+	
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	
+	<script type="text/javascript">
+	
+	
+		$(document).ready(function() {
+			var options = {
+				animatio: true,
+				placement: "right" //mesma propriedades do tooltip
+			};
+			$('.popoverButton').popover(options);
+		});
+		
+		$('.popoverButton').on('show.bs.popover', function() {
+			console.log("Opening popover..");
+		});
+		$('.popoverButton').on('shown.bs.popover', function() {
+			console.log("Popover opened.");
+		});
+		$('.popoverButton').on('hide.bs.popover', function() {
+			console.log("Hiding popover..");
+		});
+		$('.popoverButton').on('hidden.bs.popover', function() {
+			console.log("Popover hidden.");
+		});
+	</script>
+	
+	
+	
+</body>
+</html>
